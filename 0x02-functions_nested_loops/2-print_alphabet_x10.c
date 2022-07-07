@@ -3,15 +3,17 @@
 /**
  * print_alphabet_x10 -> print the lowercase alphabets
  */
+
 void print_alphabet_x10(void);
 {
-	char c, i;
+	int x;
+	int j;
 
-	for (i = 0; i < 10; i++)
+	for (x = 0; x < 10; x++)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		for (j = 'a'; j <= 'z'; j++)
 		{
-			_putchar(c);
+			_putchar(j);
 		}
 		_putchar('\n');
 	}
