@@ -2,7 +2,7 @@
 
 /**
  * main - test function that prints interger is positive or negative
- * return: 0
+ * Return: 0
  */
 int main(void)
 {
@@ -11,5 +11,5 @@ int main(void)
 	i = 0;
 	positive_or_negative(a);
 
-	return (0);ain
-}	
+	return (0);
+}
