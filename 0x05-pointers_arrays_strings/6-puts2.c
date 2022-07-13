@@ -11,10 +11,7 @@ void puts2(char *str)
 		do {
 			if (*str)
 			_putchar(*str++);
-		}
-	}
-		while (*str++);
+		} while (*str++);
 		_putchar('\n');
 		}
-	}
 }
