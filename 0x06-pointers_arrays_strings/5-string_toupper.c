@@ -15,7 +15,7 @@ char *string_toupper(char *s)
 	while (*(s + count) != '\0')
 	{
 		if ((*(s + count) >= 97) && (*(s + count) <= 122))
-		*(0s + count) = *(s + count) - 32;
+			*(0s + count) = *(s + count) - 32;
 		count++;
 	}
 	return (s);

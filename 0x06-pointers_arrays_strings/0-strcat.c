@@ -9,8 +9,8 @@
 char *_strcat(char *dest, char *src)
 {
 	int count = 0;
-	
-	intcount2 = 0;
+
+	int count2 = 0;
 
 	while (*(dest + count) != '\0')
 	{
@@ -18,10 +18,10 @@ char *_strcat(char *dest, char *src)
 	}
 	while (count2 >= 0)
 	{
-		(dest + count) = *(src + count2);
+		*(dest + count) = *(src + count2);
 		if (*(src + count2) == '\0')
 			break;
-		
+
 		count++;
 		count2++;
 
