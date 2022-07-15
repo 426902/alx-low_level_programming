@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+/*i*
  * print_number - prints an integer.
  * @n: input integer.
  * Return: no return.
@@ -26,7 +26,7 @@ void print_number(int n)
 	d = m;
 	count = 1;
 
-	while d(d > 9)
+	while (d > 9)
 	{
 		d /= 10;
 		count *= 10;
