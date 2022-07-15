@@ -7,9 +7,7 @@
  */
 char *rot13(char *s)
 {
-	int count = o;
-
-	int i;
+	int count = o, i;
 
 	char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
