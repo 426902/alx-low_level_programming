@@ -39,7 +39,6 @@ char **strtow(char *str)
 	if (!words)
 		return (NULL);
 	w = 0, pos = str;
-
 	do {
 		while (_isspace(*pos))
 			++pos;
