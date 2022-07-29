@@ -12,29 +12,27 @@
 
 int main(int argc, char *argv[])
 {
-long int multi;
+	unsigned long mul;
 
-int i, j;
+	int i, j;
 
-multi = 0;
-
-if (argc != 3)
-{
+	if (argc != 3)
+	{
 	printf("Error\n");
 	exit(98);
-}
-for (i = 1; i < argc; i++)
-{
-	for (j = 0; argv[i][j] != '\0'; j++)
+	}
+	for (i = 1; i < argc; i++)
 	{
-		if (!(isdigit(argv[i][j])))
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			exit(98);
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{
+				printf("Error\n");
+				exit(98);
+			}
 		}
 	}
-}
-multi = atoi(argv[1]) * atoi(argv[2]);
-printf("%ld\n", multi);
-return (0);
+	mul = atol(argv[1]) * atol(argv[2]);
+	printf("%lu\n", mul);
+	return (0);
 }
