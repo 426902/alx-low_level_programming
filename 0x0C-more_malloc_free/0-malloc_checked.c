@@ -4,16 +4,14 @@
  * @b: string we need to duplicate
  * Return: a pointer to the allocate memory
  */
-
 void *malloc_checked(unsigned int b)
 {
-void *ptr;
+	void *p = NULL;
+	p = malloc(b);
 
-ptr = malloc(b);
-
-if (ptr == NULL)
-{
-exit(98);
-}
-return (ptr);
+	if (p == NULL)
+	{
+		exit(98);
+	}
+	return (p);
 }
