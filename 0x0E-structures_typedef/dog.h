@@ -1,5 +1,6 @@
 #ifndef STRUCT_FILE
 #define STRUCT_FILE
+
 /**
  * struct dog - Structure for dog
  * @name: Name of dog
@@ -9,9 +10,10 @@
 struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
+
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
