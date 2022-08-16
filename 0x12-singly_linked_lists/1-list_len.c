@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 /**
  * list_len - Check the codr for Holberton School Students.
@@ -6,13 +9,12 @@
  */
 size_t list_len(const list_t *h)
 {
-	const list_t *ptr = h;
-	size_t t = 0;
+	int count = 0;
 
-	while (ptr != NULL)
+	while (h)
 	{
-		ptr = ptr->next;
-		t++;
+		count++;
+		h = h->next;
 	}
-	return (t);
+	return (count);
 }
