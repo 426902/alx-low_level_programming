@@ -29,8 +29,8 @@ listint_t **_ra(listint_t **list, size_t size, listint_t *new)
 	return (newlist);
 }
 /**
- * free_listint_safe - frees a linked list.
- * @h: double pointer to the start of the list
+ * free_listint_safe - frees a listint_t linked list.
+ * @head: double pointer to the start of the list
  * Return: number of nodes in the list
  */
 size_t free_listint_safe(listint_t **head)
